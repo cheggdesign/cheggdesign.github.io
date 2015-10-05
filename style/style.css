@@ -1,0 +1,334 @@
+/* Global styles */
+
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.button {
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.amp {
+    font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+    font-size: 110%;
+    font-style:i talic;
+}
+
+/* Nav styles */
+
+#nav-bar {
+    background-color: transparent;
+    height: 50px;
+    left: 0;
+    min-width: 980px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#chegg-ux-logo {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* Page styles */
+
+#container {
+    background: url('../img/header-bg.jpg');
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+}
+
+main {
+    position: absolute;
+    top: 750px;
+    width: 100%;
+}
+
+main div:first-child.section-header{
+    padding-top: 40px;
+}
+
+.section-header {
+    padding-top: 80px;
+    text-align: center;
+    width: 100%
+}
+
+.section-header h2 {
+    color: #333;
+    font-size: 36px;
+    line-height: 43px;
+    padding-bottom: 40px;
+}
+
+/* Header styles */
+
+#header-content h1 {
+    color: #fff;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 auto;
+    padding-top: 250px;
+    text-align: center;
+    text-shadow: 1px 1px #414141;
+    width: 660px;
+}
+
+#header-buttons {
+    margin-top: 40px;
+    width: 100%;
+}
+
+#header-buttons a:first-child {
+    margin-right: 10px;
+}
+
+#header-buttons div {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.button.header-button {
+    background-color: #f07d00;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 15px;
+    width: 220px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#learn-more-anchor {
+    position: absolute;
+    top: 650px;
+    width: 100%;
+}
+
+#learn-more-anchor a {
+    color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px #414141;
+    width: 100%;
+}
+
+/* Employee testimonials styles */
+
+#testimonials-section {
+    display: table;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.testimonial-portrait {
+    background-color: #aaa;
+    border: 1px solid #e9e9e9;
+    display: table-cell;
+    height: 540px;
+    margin: 0 auto;
+    position: relative;
+    width: 340px;
+}
+
+.testimonial {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    min-height: 184px;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.testimonial h4 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.testimonial p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+.portrait-stewart {
+    background: url('../img/portrait-stewart.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 5px solid #fff;
+}
+
+.portrait-kyrie {
+    background: url('../img/portrait-kyrie.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 5px solid #fff;
+}
+
+.portrait-kaari {
+    background: url('../img/portrait-kaari.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Culture styles */
+
+#first-table-row,
+#second-table-row,
+#third-table-row {
+    display: table;
+    margin: 0 auto;
+    max-width: 960px;
+}
+.culture-portrait {
+    display: table-cell;
+    border: 4px solid #fff;
+}
+
+.cultural-stat {
+    display: inline-block;
+    position: relative;
+    border: 4px solid #fff;
+}
+
+.stat-content {
+    bottom: 0;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+}
+
+.stat-content h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.stat-content p {
+    font-size: 28px;
+    line-height: 34px;
+}
+
+#culture-shafeen {
+    background: url('../img/culture-shafeen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 364px;
+    width: 243px;
+}
+
+#culture-jennie {
+    background: url('../img/culture-jennie.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 268px;
+    width: 186px;
+}
+
+#culture-experience {
+    background-color: #fd9f00;
+    background-size: 291px 194px;
+    height: 194px;
+    width: 291px;
+}
+
+#culture-twyla {
+    background: url('../img/culture-twyla.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 426px;
+    width: 311px;
+}
+
+#culture-mark {
+    background: url('../img/culture-mark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 137px;
+    position: relative;
+    top: -100px;
+    width: 223px;
+}
+
+#culture-jenn {
+    background: url('../img/culture-jenn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 267px;
+    position: relative;
+    top: -197px;
+    width: 169px;
+}
+
+#culture-mike {
+    background: url('../img/culture-mike.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 392px;
+    position: relative;
+    right: -2px;
+    top: -232px;
+    width: 308px;
+}
+
+#culture-rosa {
+    background: url('../img/culture-rosa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: none;
+    height: 194px;
+    position: relative;
+    top: -24px;
+    left: 1px;
+    width: 286px;
+}
+
+#culture-kids {
+    background-color: #ffcc00;
+    background-size: 209px 186px;
+    border-top: 9px solid #fff;
+    height: 231px;
+    position: relative;
+    top: -366px;
+    width: 209px;
+}
+
+#culture-jen {
+    background: url('../img/culture-jen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 267px;
+    min-width: 159px;
+    position: relative;
+    top: -361px;
+    width: 162px;
+}
+
+#culture-education {
+    background-color: #339999;
+    background-size: contain;
+    height: 102px;
+    position: relative;
+    top: -365px;
+    width: 566px;
+}
+
+/* Impact styles */
+
+#impact {
+    margin-top: -393px;
+}
+
