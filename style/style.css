@@ -42,7 +42,7 @@ body {
 /* Page styles */
 
 #container {
-    background: url('../img/header-bg.jpg');
+    background: url('../img/header-chegg-team-alternate.jpg');
     height: 750px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,7 +138,6 @@ main div:first-child.section-header{
     border: 1px solid #e9e9e9;
     display: table-cell;
     height: 540px;
-    margin: 0 auto;
     position: relative;
     width: 340px;
 }
@@ -332,3 +331,80 @@ main div:first-child.section-header{
     margin-top: -393px;
 }
 
+#impact-section {
+    display: table;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.impact-stat {
+    background-color: #aaa;
+    border-right: 20px solid white;
+    display: table-cell;
+    height: 133px;
+    position: relative;
+    width: 160px;
+}
+
+.impact-content {
+    position: absolute;
+    top: 60px;
+}
+
+.impact-content span {
+    color: #666;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.impact-content p {
+    color: #666;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 18px;
+}
+
+#stat-careers {
+    background: url('../img/icon-careers.png');
+    background-position: center top;
+    background-size: 47px 45px;
+    background-repeat: no-repeat;
+}
+
+#stat-grades {
+    background: url('../img/icon-grades.png');
+    background-position: center top;
+    background-size: 47px 45px;
+    background-repeat: no-repeat;
+}
+
+#stat-books {
+    background: url('../img/icon-books.png');
+    background-position: center top;
+    background-size: 47px 45px;
+    background-repeat: no-repeat;
+}
+
+#stat-students {
+    background: url('../img/icon-students.png');
+    background-position: center top;
+    background-size: 47px 45px;
+    background-repeat: no-repeat;
+}
+
+#stat-students .impact-content p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Footer styles */
+
+#footer-content {
+    margin-bottom: 100px;
+}
+
+#footer-content h1 {
+    font-size: 32px;
+    line-height: 38px;
+}
