@@ -331,6 +331,12 @@ main div:first-child.section-header{
     margin-top: -393px;
 }
 
+#impact-stats {
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
 #impact-section {
     display: table;
     margin: 0 auto;
@@ -348,7 +354,7 @@ main div:first-child.section-header{
 
 .impact-content {
     position: absolute;
-    top: 60px;
+    top: 40px;
 }
 
 .impact-content span {
@@ -396,6 +402,48 @@ main div:first-child.section-header{
 #stat-students .impact-content p {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+#impact-tweets {
+    margin-top: 40px;
+}
+
+.impact-tweet {
+    color: #666;
+    border: 1px solid #e9e9e9;
+    float: left;
+    margin-right: 10px;
+    min-height: 300px;
+    max-width: 200px;
+    padding: 40px;
+    position: relative;
+}
+
+.tweet-content {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.tweet-meta-data {
+    border-top: 1px solid #e9e9e9;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    width: 200px;
+}
+
+.twitter-picture {
+    display: block;
+    height: 64px;
+    margin: 0 auto 10px auto;
+    width: 64px;
+}
+
+.twitter-username {
+    display: block;
+    font-weight: 500;
 }
 
 /* Footer styles */
