@@ -484,19 +484,51 @@ main div:first-child.section-header{
     width: 32px;
 }
 
+/* Student Hub styles */
+
+#student-hub {
+    background-color: #ffcc00;
+}
+
+#hub-padding-top {
+    padding-top: 150px;
+}
+
+#high-school {
+    background: url('../img/illustration-high-school.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    min-height: 700px;
+    max-width: 960px;
+}
+
+#college {
+    background: url('../img/illustration-college.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    min-height: 700px;
+    max-width: 960px;
+}
+
+#the-hub {
+    background: url('../img/illustration-hub.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    min-height: 700px;
+    max-width: 960px;
+}
+
 /* Office loations styles */
 
 #office-locations {
     background: url('../img/office.png');
-    background-position: center center;
+    background-position: center 85%;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 700px;
-}
-
-#office-locations h2 {
-    color: #fff;
-    text-shadow: 1px 1px #414141;
 }
 
 #locations-section {
@@ -550,5 +582,5 @@ main div:first-child.section-header{
 /* Footer styles */
 
 #footer-content {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
