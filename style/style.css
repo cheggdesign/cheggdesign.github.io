@@ -329,6 +329,7 @@ main div:first-child.section-header{
 
 #impact {
     margin-top: -393px;
+    margin-bottom: 80px;
 }
 
 #impact-stats {
@@ -354,7 +355,7 @@ main div:first-child.section-header{
 
 .impact-content {
     position: absolute;
-    top: 40px;
+    top: 60px;
 }
 
 .impact-content span {
@@ -422,7 +423,7 @@ main div:first-child.section-header{
 .tweet-content {
     font-size: 14px;
     line-height: 22px;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -446,13 +447,80 @@ main div:first-child.section-header{
     font-weight: 500;
 }
 
+.twitter-logo {
+    background: url('../img/twitter-logo.png');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+
+/* Office loations styles */
+
+#office-locations {
+    background: url('../img/office.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+}
+
+#office-locations h2 {
+    color: #fff;
+    text-shadow: 1px 1px #414141;
+}
+
+#locations-section {
+    display: table;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.office-location {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+    min-height: 486px;
+    min-width: 230px;
+    position: relative;
+}
+
+.location-header {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-top: 80px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #414141;
+}
+
+#first-location .location-icon {
+    padding-top: 30px;
+}
+
+.location-icon {
+    padding-top: 40px;
+}
+
+#headquarters {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.office-address {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
+    margin-top: 40px;
+    text-shadow: 1px 1px #414141;
+}
+
 /* Footer styles */
 
 #footer-content {
     margin-bottom: 100px;
-}
-
-#footer-content h1 {
-    font-size: 32px;
-    line-height: 38px;
 }
