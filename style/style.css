@@ -32,11 +32,39 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2000;
 }
 
 #chegg-ux-logo {
     padding-left: 10px;
     padding-top: 10px;
+}
+
+#nav-buttons {
+    float: right;
+    position: relative;
+    right: 20px;
+    top: -33px;
+}
+
+.button.nav-button {
+    background-color: #f07d00;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 8px;
+    width: 125px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button.nav-button.outline {
+    background-color: #fff;
+    border: 2px solid #f07d00;
+    box-shadow: none;
+    color: #f07d00;
+    padding: 6px;
+    margin-right: 8px;
+    text-shadow: none;
+    width: 125px;
 }
 
 /* Page styles */
