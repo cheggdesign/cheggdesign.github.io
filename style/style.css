@@ -1,5 +1,15 @@
 /* Global styles */
 
+@font-face {
+    font-family: AspiraDemi;
+    src: url("../fonts/aspira-demi.otf") format("opentype");
+}
+
+@font-face {
+    font-family: AspiraLight;
+    src: url("../fonts/aspira-light.otf") format("opentype");
+}
+
 body {
     background-color: #fff;
     font-family: sans-serif;
@@ -70,7 +80,7 @@ body {
 /* Page styles */
 
 #container {
-    background: url('../img/header-chegg-team-alternate.jpg');
+    background: url('../img/header-bg.jpg');
     height: 750px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,7 +181,7 @@ main div:first-child.section-header{
 }
 
 .testimonial {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(51, 153, 153, 0.8);
     color: #fff;
     min-height: 184px;
     padding: 30px;
@@ -200,7 +210,8 @@ main div:first-child.section-header{
 
 .portrait-kyrie {
     background: url('../img/portrait-kyrie.png');
-    background-size: cover;
+    background-position: center -20px;
+    background-size: 112%;
     background-repeat: no-repeat;
     border-right: 5px solid #fff;
 }
@@ -357,7 +368,8 @@ main div:first-child.section-header{
 
 #impact {
     margin-top: -393px;
-    margin-bottom: 80px;
+    //margin-bottom: 80px;
+    margin-bottom: 220px;
 }
 
 #impact-stats {
@@ -487,11 +499,16 @@ main div:first-child.section-header{
 /* Student Hub styles */
 
 #student-hub {
-    background-color: #ffcc00;
+    //background-color: #ffcc00;
+    //margin-bottom: 220px;
 }
 
 #hub-padding-top {
     padding-top: 150px;
+}
+
+.hub-content {
+
 }
 
 #high-school {
@@ -524,11 +541,16 @@ main div:first-child.section-header{
 /* Office loations styles */
 
 #office-locations {
-    background: url('../img/office.png');
+    background: url('../img/office.jpg');
     background-position: center 85%;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 700px;
+}
+
+#office-locations h2 {
+    position: relative;
+    top: -160px;
 }
 
 #locations-section {
@@ -538,7 +560,7 @@ main div:first-child.section-header{
 }
 
 .office-location {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(51, 153, 153, 0.8);
     color: #fff;
     float: left;
     margin-right: 10px;
