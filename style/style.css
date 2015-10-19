@@ -26,12 +26,6 @@ body {
     text-transform: lowercase;
 }
 
-.amp {
-    font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
-    font-size: 110%;
-    font-style:i talic;
-}
-
 /* Nav styles */
 
 #nav-bar {
@@ -61,6 +55,7 @@ body {
     background-color: #f07d00;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     color: #fff;
+    font-family: AspiraLight;
     padding: 8px;
     width: 125px;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
@@ -105,6 +100,7 @@ main div:first-child.section-header{
 
 .section-header h2 {
     color: #333;
+    font-family: AspiraDemi;
     font-size: 36px;
     line-height: 43px;
     padding-bottom: 40px;
@@ -114,6 +110,7 @@ main div:first-child.section-header{
 
 #header-content h1 {
     color: #fff;
+    font-family: AspiraDemi;
     font-size: 48px;
     line-height: 56px;
     margin: 0 auto;
@@ -142,12 +139,16 @@ main div:first-child.section-header{
     background-color: #f07d00;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     color: #fff;
+    font-family: AspiraLight;
+    font-size: 18px;
+    line-height: 22px;
     padding: 15px;
     width: 220px;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #learn-more-anchor {
+    font-family: AspiraDemi;
     position: absolute;
     top: 650px;
     width: 100%;
@@ -190,12 +191,18 @@ main div:first-child.section-header{
 }
 
 .testimonial h4 {
+    font-family: AspiraDemi;
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 8px;
 }
 
+.testimonial span {
+    font-family: AspiraLight;
+}
+
 .testimonial p {
+    font-family: AspiraLight;
     font-size: 14px;
     line-height: 20px;
     padding-top: 20px;
@@ -245,6 +252,7 @@ main div:first-child.section-header{
 .stat-content {
     bottom: 0;
     color: #fff;
+    font-family: AspiraLight;
     padding: 10px;
     position: absolute;
     text-align: left;
@@ -256,6 +264,7 @@ main div:first-child.section-header{
 }
 
 .stat-content p {
+    font-family: AspiraDemi;
     font-size: 28px;
     line-height: 34px;
 }
@@ -400,6 +409,7 @@ main div:first-child.section-header{
 
 .impact-content span {
     color: #666;
+    font-family: AspiraDemi;
     font-size: 26px;
     font-weight: 700;
     line-height: 31px;
@@ -407,6 +417,7 @@ main div:first-child.section-header{
 
 .impact-content p {
     color: #666;
+    font-family: AspiraLight;
     font-size: 15px;
     font-weight: 100;
     line-height: 18px;
@@ -461,8 +472,9 @@ main div:first-child.section-header{
 }
 
 .tweet-content {
-    font-size: 14px;
-    line-height: 22px;
+    font-family: AspiraLight;
+    font-size: 16px;
+    line-height: 24px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -484,6 +496,7 @@ main div:first-child.section-header{
 
 .twitter-username {
     display: block;
+    font-family: AspiraDemi;
     font-weight: 500;
 }
 
@@ -570,6 +583,7 @@ main div:first-child.section-header{
 }
 
 .location-header {
+    font-family: AspiraDemi;
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
@@ -587,6 +601,7 @@ main div:first-child.section-header{
 }
 
 #headquarters {
+    font-family: AspiraLight;
     font-size: 10px;
     letter-spacing: 1px;
     line-height: 12px;
@@ -594,6 +609,7 @@ main div:first-child.section-header{
 }
 
 .office-address {
+    font-family: AspiraLight;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
