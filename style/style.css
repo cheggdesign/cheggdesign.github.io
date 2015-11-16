@@ -168,6 +168,7 @@ main div:first-child.section-header{
 
 #testimonials-section {
     display: table;
+    empty-cells: show;
     margin: 0 auto;
     max-width: 960px;
 }
@@ -275,6 +276,7 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
     height: 364px;
     width: 243px;
+    vertical-align: top;
 }
 
 #culture-jennie {
@@ -283,6 +285,7 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
     height: 268px;
     width: 186px;
+    vertical-align: top;
 }
 
 #culture-experience {
@@ -298,6 +301,7 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
     height: 426px;
     width: 311px;
+    vertical-align: top;
 }
 
 #culture-mark {
@@ -308,6 +312,7 @@ main div:first-child.section-header{
     position: relative;
     top: -100px;
     width: 223px;
+    vertical-align: top;
 }
 
 #culture-jenn {
@@ -318,6 +323,7 @@ main div:first-child.section-header{
     position: relative;
     top: -197px;
     width: 169px;
+    vertical-align: top;
 }
 
 #culture-mike {
@@ -329,6 +335,7 @@ main div:first-child.section-header{
     right: -2px;
     top: -232px;
     width: 308px;
+    vertical-align: top;
 }
 
 #culture-rosa {
@@ -341,6 +348,7 @@ main div:first-child.section-header{
     top: -24px;
     left: 1px;
     width: 286px;
+    vertical-align: top;
 }
 
 #culture-kids {
@@ -362,6 +370,7 @@ main div:first-child.section-header{
     position: relative;
     top: -361px;
     width: 162px;
+    vertical-align: top;
 }
 
 #culture-education {
