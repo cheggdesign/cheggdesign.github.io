@@ -31,17 +31,19 @@ body {
 #nav-bar {
     background-color: transparent;
     height: 50px;
-    left: 0;
+/*    left: 0;
     min-width: 980px;
     position: fixed;
-    top: 0;
+    top: 0;*/
     width: 100%;
-    z-index: 2000;
+    /*z-index: 2000;*/
 }
 
 #chegg-ux-logo {
     padding-left: 10px;
     padding-top: 10px;
+    position: relative;
+    top: 50px;
 }
 
 #nav-buttons {
@@ -630,4 +632,114 @@ main div:first-child.section-header{
 
 #footer-content {
     margin-bottom: 200px;
+}
+
+/* Mobile styles */
+
+@media screen and (max-width: 375px) {
+
+    #container {
+        height: 480px;
+    }
+
+    main {
+        top: 450px;
+    }
+
+    #culture {
+        display: none;
+    }
+
+    #header-content h1 {
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    #testimonials-section {
+        display: block;
+        max-width: 375px;
+    }
+
+    .testimonial-portrait {
+        border-right: none;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .button.header-button {
+        display: block;
+        margin-bottom: 10px;
+        margin: 0 auto 10px auto;
+    }
+
+    #header-buttons a:first-child {
+        margin-right: auto;
+    }
+
+    #impact {
+        margin-top: 0;
+        margin-bottom: 120px;
+    }
+
+    #impact.section-header {
+        padding-top: 40px;
+    }
+
+    #impact-stats {
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .impact-stat {
+        border-right: none;
+        display: block;
+        margin: 0 auto 40px auto;
+    }
+
+    #impact-tweets {
+        margin-top: 0;
+        width: 280px;
+    }
+
+    .impact-tweet {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #locations-section {
+        display: block;
+        width: 100%;
+    }
+
+    #office-locations {
+        background: none;
+        padding-bottom: 40px;
+    }
+
+    #first-location {
+        margin-top: -160px;
+    }
+
+    .office-location {
+        background-color: rgba(51, 153, 153, 1);
+        float: none;
+        margin: 0 auto 20px auto;
+        max-width: 75%;
+    }
+
+    #footer-content.section-header {
+        padding-top: 0;
+    }
+
+    #footer-content #header-buttons {
+        margin-top: 0;
+    }
 }
