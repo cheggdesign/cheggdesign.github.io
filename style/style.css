@@ -640,6 +640,7 @@ main div:first-child.section-header{
 
     #container {
         height: 480px;
+        background-position-x: -80px; 
     }
 
     main {
@@ -671,6 +672,11 @@ main div:first-child.section-header{
         border-right: none;
         display: block;
         margin: 0 auto 10px auto;
+        max-width: 300px;
+    }
+
+    .portrait-kyrie {
+        background-size: 114%;
     }
 
     .button.header-button {
@@ -690,6 +696,11 @@ main div:first-child.section-header{
 
     #impact.section-header {
         padding-top: 40px;
+    }
+
+    #impact h2 {
+        font-size: 27px;
+        line-height: 31px;
     }
 
     #impact-stats {
