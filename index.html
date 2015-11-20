@@ -8,6 +8,79 @@
 <meta name="description" content="Chegg UX Design is working to make higher education more accessible, affordable, and achievable. We'd love to grab coffee and chat about our mission and team." />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<script>
+
+window.setInterval(setSuccessWord, 4000);
+
+function setSuccessWord() {
+
+    var el = document.getElementsByClassName('student-success-word')[0];
+
+    var currentWord = el.innerText;
+
+    if (!el.classList.contains('fade-out')) {
+        el.classList.add('fade-out');
+        window.setTimeout(toggleWord, 1500);
+    }
+
+    function toggleWord() {
+        if (currentWord === 'affordable') {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'accessible';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+
+            // window.setInterval(fadeInWord, 100);
+        } else if (currentWord === 'accessible') {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'achievable';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+        } else {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'affordable';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+        }
+    }
+}
+
+</script>
+
 </head>
 
 <body>
@@ -23,7 +96,7 @@
         </nav>
 
         <header id="header-content">
-            <h1>We are designing more affordable higher education.</h1>
+            <h1>We are designing more <span class="student-success-word">affordable</span> higher education.</h1>
             <div id="header-buttons">
                 <div>
                     <a class="button header-button" href="http://www.chegg.com/jobs/listings">Open positions</a>
