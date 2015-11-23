@@ -686,8 +686,13 @@ main div:first-child.section-header{
         width: 175px;
     }
 
+    #bg-overlay-container {
+        max-width: 375px;
+    }
+
     #bg-overlay {
         height: 552px;
+        min-width: 375px;
     }
 
     .section-header h2 {
@@ -800,6 +805,7 @@ main div:first-child.section-header{
     #bg-overlay {
         height: 553px;
         top: -488px;
+        min-width: 320px;
     }
 
     #header-content h1 {
