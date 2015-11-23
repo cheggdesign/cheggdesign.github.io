@@ -31,19 +31,16 @@ body {
 #nav-bar {
     background-color: transparent;
     height: 50px;
-/*    left: 0;
-    min-width: 980px;
-    position: fixed;
-    top: 0;*/
+    position: relative;
     width: 100%;
-    /*z-index: 2000;*/
+    z-index: 2003;
 }
 
 #chegg-ux-logo {
-    padding-left: 10px;
-    padding-top: 10px;
+    left: 45%;
     position: relative;
-    top: 50px;
+    top: -170px;
+    z-index: 2004;
 }
 
 #nav-buttons {
@@ -116,15 +113,24 @@ main div:first-child.section-header{
     font-size: 48px;
     line-height: 56px;
     margin: 0 auto;
-    padding-top: 250px;
+    padding-top: 300px;
+    position: relative;
     text-align: center;
     text-shadow: 1px 1px #414141;
     width: 660px;
+    z-index: 2001;
+}
+
+.student-success-word {
+    display: inline-block;
+    min-width: 231.36px;
+    width: 231.36px;
 }
 
 #header-buttons {
-    margin-top: 40px;
+    position: relative;
     width: 100%;
+    z-index: 2000;
 }
 
 #header-buttons a:first-child {
@@ -163,6 +169,22 @@ main div:first-child.section-header{
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px #414141;
+    width: 100%;
+}
+
+#bg-overlay-container {
+    position: relative;
+    width: 100%;
+}
+
+#bg-overlay {
+    position: relative;
+    background-color: rgba(51, 153, 153, 0.8);
+    height: 760px;
+    min-width: 960px;
+    min-height: 100%;
+    top: -505px;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -386,12 +408,6 @@ main div:first-child.section-header{
 
 /* Impact styles */
 
-#impact {
-    margin-top: -393px;
-    //margin-bottom: 80px;
-    margin-bottom: 220px;
-}
-
 #impact-stats {
     padding-bottom: 10px;
     padding-left: 80px;
@@ -569,6 +585,7 @@ main div:first-child.section-header{
     background-position: center 85%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -220px;
     min-height: 700px;
 }
 
@@ -640,7 +657,7 @@ main div:first-child.section-header{
 
     #container {
         height: 480px;
-        background-position-x: -80px; 
+        background-position-x: -80px;
     }
 
     main {
@@ -651,11 +668,26 @@ main div:first-child.section-header{
         display: none;
     }
 
+    #chegg-ux-logo {
+        left: 33%;
+    }
+
     #header-content h1 {
         font-size: 36px;
         line-height: 42px;
-        padding-top: 100px;
+        padding-top: 153px;
         width: 100%;
+    }
+
+    .student-success-word {
+        position: relative;
+        text-align: left;
+        min-width: 175px;
+        width: 175px;
+    }
+
+    #bg-overlay {
+        height: 552px;
     }
 
     .section-header h2 {
@@ -732,6 +764,7 @@ main div:first-child.section-header{
 
     #office-locations {
         background: none;
+        margin-top: 0;
         padding-bottom: 40px;
     }
 
@@ -752,6 +785,28 @@ main div:first-child.section-header{
 
     #footer-content #header-buttons {
         margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    #chegg-ux-logo {
+        position: relative;
+        top: -165px;
+        width: 35%;
+    }
+
+    #bg-overlay {
+        height: 553px;
+        top: -488px;
+    }
+
+    #header-content h1 {
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 140px;
+        width: 100%;
     }
 }
 
