@@ -179,7 +179,7 @@ main div:first-child.section-header{
 
 #bg-overlay {
     position: relative;
-    background-color: rgba(51, 153, 153, 0.9);
+    background-color: rgba(51, 153, 153, 0.93);
     height: 760px;
     min-width: 960px;
     min-height: 100%;
