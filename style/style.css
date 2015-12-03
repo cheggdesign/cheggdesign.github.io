@@ -152,7 +152,6 @@ main div:first-child.section-header{
     line-height: 22px;
     padding: 15px;
     width: 220px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #learn-more-anchor {
@@ -179,7 +178,7 @@ main div:first-child.section-header{
 
 #bg-overlay {
     position: relative;
-    background-color: rgba(51, 153, 153, 0.93);
+    background-color: rgba(51, 153, 153, 0.94);
     height: 760px;
     min-width: 960px;
     min-height: 100%;
@@ -617,7 +616,6 @@ main div:first-child.section-header{
     line-height: 22px;
     padding-top: 80px;
     text-transform: uppercase;
-    text-shadow: 1px 1px #414141;
 }
 
 #first-location .location-icon {
@@ -642,7 +640,6 @@ main div:first-child.section-header{
     font-weight: 100;
     line-height: 19px;
     margin-top: 40px;
-    text-shadow: 1px 1px #414141;
 }
 
 /* Footer styles */
