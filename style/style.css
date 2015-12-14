@@ -37,10 +37,16 @@ body {
 }
 
 #chegg-ux-logo {
-    left: 45%;
+    left: 40%;
     position: relative;
-    top: -170px;
+    top: -180px;
     z-index: 2004;
+
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    -o-transform: scale(0.45);
+    transform: scale(0.45);
 }
 
 #nav-buttons {
@@ -179,7 +185,7 @@ main div:first-child.section-header{
 #bg-overlay {
     position: relative;
     background-color: rgba(51, 153, 153, 0.94);
-    height: 760px;
+    height: 724px;
     min-width: 960px;
     min-height: 100%;
     top: -505px;
