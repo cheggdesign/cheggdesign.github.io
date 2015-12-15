@@ -29,27 +29,27 @@ window.onscroll = function() {
         // one.style.left = "0";
         // one.style.width = "100%";
 
-        // hub.style.position = "fixed";
-        // hub.style.top = "0";
-        // hub.style.left = "0";
-        // hub.style.width = "100%";
-        // hub.style.zIndex = "2000";
-        // hub.style.marginTop = "0";
+        hub.style.position = "fixed";
+        hub.style.top = "0";
+        hub.style.left = "0";
+        hub.style.width = "100%";
+        hub.style.zIndex = "2000";
+        hub.style.marginTop = "0";
     }
 
-    // if (off.y >= '2577' && off.y <= '3576') {
-    //     two.style.opacity = "1";
-    //     h2.textContent = "Batman begins!";
-    // }
+    if (off.y >= '2577' && off.y <= '3576') {
+        two.style.opacity = "1";
+        h2.textContent = "Batman begins!";
+    }
 
-    // if ((off.y > '3576') || (off.y < '1495')) {
-    //     hub.style.position = "static";
-    //     hub.style.top = "auto";
-    //     hub.style.left = "auto";
-    //     hub.style.width = "auto";
-    //     hub.style.zIndex = "auto";
-    //     hub.style.marginTop = "80px";
-    // }
+    if ((off.y > '3576') || (off.y < '1495')) {
+        hub.style.position = "static";
+        hub.style.top = "auto";
+        hub.style.left = "auto";
+        hub.style.width = "auto";
+        hub.style.zIndex = "auto";
+        hub.style.marginTop = "80px";
+    }
 
     // var h1 = document.getElementsByClassName('hub-section-title')[0];
     // var two = document.getElementsByClassName('two')[0];
