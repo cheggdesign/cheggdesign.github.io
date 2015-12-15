@@ -259,6 +259,45 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
 }
 
+/* Student hub styles */
+
+#student-hub {
+    background-color: #FFCC00;
+    height: 1000px;
+    margin-top: 80px;
+}
+
+.hub-content {
+    width: 960px;
+    margin: auto;
+}
+
+.hub-slide-one {
+    background-image: url('../img/student-hub-outline.png');
+    background-position-y: 120px;
+    background-repeat: no-repeat;
+    background-size: 960px;
+    height: 1000px;
+    max-width: 100%;
+}
+
+.hub-slide-two {
+    background-image: url('../img/student-hub-color-2.png');
+    background-position: 268px 24px;
+    background-repeat: no-repeat;
+    background-size: 960px;
+    height: 1000px;
+    max-width: 100%;
+    opacity: 1;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+
 /* Culture styles */
 
 #first-table-row,
@@ -412,6 +451,10 @@ main div:first-child.section-header{
 }
 
 /* Impact styles */
+
+#impact.section-header {
+    padding-top: 340px;
+}
 
 #impact-stats {
     padding-bottom: 10px;
@@ -657,6 +700,10 @@ main div:first-child.section-header{
 /* Mobile styles */
 
 @media screen and (max-width: 375px) {
+
+    #student-hub {
+        display: none;
+    }
 
     #container {
         height: 480px;
