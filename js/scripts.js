@@ -19,30 +19,32 @@ window.onscroll = function() {
     console.log(off.y);
 
     var h2 = document.getElementsByClassName('hub-section-title')[0];
+    var zero = document.getElementsByClassName('hub-slide-zero')[0];
     var one = document.getElementsByClassName('hub-slide-one')[0];
     var two = document.getElementsByClassName('hub-slide-two')[0];
     var hub = document.getElementById('student-hub');
 
-    if (off.y >= '1495' && off.y <= '2576') {
-        // one.style.position = "fixed";
-        // one.style.top = "0";
-        // one.style.left = "0";
-        // one.style.width = "100%";
-
+    if (off.y >= '1495') {
         hub.style.position = "fixed";
         hub.style.top = "0";
         hub.style.left = "0";
         hub.style.width = "100%";
         hub.style.zIndex = "2000";
         hub.style.marginTop = "0";
+
+        one.style.opacity = "1";
+        two.style.opacity = "0";
+
+        h2.textContent = "High School";
     }
 
-    if (off.y >= '2577' && off.y <= '3576') {
+    if (off.y >= '1995') {
+        one.style.opacity = "0";
         two.style.opacity = "1";
         h2.textContent = "Batman begins!";
     }
 
-    if ((off.y > '3576') || (off.y < '1495')) {
+    if ((off.y > '2576') || (off.y < '1495')) {
         hub.style.position = "static";
         hub.style.top = "auto";
         hub.style.left = "auto";
