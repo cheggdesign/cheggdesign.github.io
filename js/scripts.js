@@ -22,6 +22,7 @@ window.onscroll = function() {
     var zero = document.getElementsByClassName('hub-slide-zero')[0];
     var one = document.getElementsByClassName('hub-slide-one')[0];
     var two = document.getElementsByClassName('hub-slide-two')[0];
+    var three = document.getElementsByClassName('hub-slide-three')[0];
     var hub = document.getElementById('student-hub');
 
     if (off.y >= '1495') {
@@ -34,6 +35,7 @@ window.onscroll = function() {
 
         one.style.opacity = "1";
         two.style.opacity = "0";
+        three.style.opacity = "0";
 
         h2.textContent = "High School";
     }
@@ -41,10 +43,18 @@ window.onscroll = function() {
     if (off.y >= '1995') {
         one.style.opacity = "0";
         two.style.opacity = "1";
+        three.style.opacity = "0";
         h2.textContent = "Batman begins!";
     }
 
-    if ((off.y > '2576') || (off.y < '1495')) {
+    if (off.y >= '2495') {
+        one.style.opacity = "0";
+        two.style.opacity = "0";
+        three.style.opacity = "1";
+        h2.textContent = "Another classroom!!!";
+    }
+
+    if ((off.y > '2976') || (off.y < '1495')) {
         hub.style.position = "static";
         hub.style.top = "auto";
         hub.style.left = "auto";

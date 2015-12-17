@@ -326,6 +326,28 @@ main div:first-child.section-header{
     transform: scale(0.73);
 }
 
+.hub-slide-three {
+    background-image: url('../img/student-hub-color-3.png');
+    background-position: 445px -3px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    opacity: 0;
+    position: relative;
+    top: -3000px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
 
 /* Culture styles */
 
@@ -482,7 +504,7 @@ main div:first-child.section-header{
 /* Impact styles */
 
 #impact.section-header {
-    padding-top: 340px;
+    padding-top: 280px;
 }
 
 #impact-stats {
