@@ -259,6 +259,7 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
 }
 
+
 /* Student hub styles */
 
 #student-hub {
@@ -347,6 +348,33 @@ main div:first-child.section-header{
     -o-transform: scale(0.73);
     transform: scale(0.73);
 }
+
+.section-header h2.hub-section-title {
+    padding-bottom: 20px;
+    opacity: .5;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+.hub-section-subheader {
+    font-size: 21px;
+    line-height: 28px;
+    margin: auto;
+    max-width: 960px;
+    opacity: .5;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+
 
 
 /* Culture styles */
@@ -638,8 +666,8 @@ main div:first-child.section-header{
 /* Student Hub styles */
 
 #student-hub {
-    //background-color: #ffcc00;
-    //margin-bottom: 220px;
+    background-color: #ffcc00;
+    margin-bottom: 220px;
 }
 
 #hub-padding-top {
@@ -676,6 +704,7 @@ main div:first-child.section-header{
     min-height: 700px;
     max-width: 960px;
 }
+
 
 /* Office loations styles */
 

@@ -24,6 +24,7 @@ window.onscroll = function() {
     var two = document.getElementsByClassName('hub-slide-two')[0];
     var three = document.getElementsByClassName('hub-slide-three')[0];
     var hub = document.getElementById('student-hub');
+    var h3 = document.getElementsByClassName('hub-section-subheader')[0];
 
     if (off.y >= '1495') {
         hub.style.position = "fixed";
@@ -37,30 +38,38 @@ window.onscroll = function() {
         two.style.opacity = "0";
         three.style.opacity = "0";
 
-        h2.textContent = "High School";
+        h2.textContent = "High school students start their adventure with us";
+        h2.style.opacity = "1";
+        h3.textContent = "It's a piece of cake to compare colleges and find the right fit, get scholarships, and access on-demand online tutoring";
+        h3.style.opacity = "1";
     }
 
     if (off.y >= '1995') {
         one.style.opacity = "0";
         two.style.opacity = "1";
         three.style.opacity = "0";
-        h2.textContent = "Batman begins!";
+        h2.textContent = "College students love us!";
+        h3.textContent = "We save them $$$ each term on their textbooks";
     }
 
     if (off.y >= '2495') {
         one.style.opacity = "0";
         two.style.opacity = "0";
         three.style.opacity = "1";
-        h2.textContent = "Another classroom!!!";
+        h2.textContent = "They're also learning more than ever";
+        h3.textContent = "Expert Answers for any homework question, step-by-step textbook solutions, and the #1 rated Flashcards+ app (not to mention on-demand tutors)";
     }
 
-    if ((off.y > '2976') || (off.y < '1495')) {
+    if ((off.y > '2676') || (off.y < '1495')) {
         hub.style.position = "static";
         hub.style.top = "auto";
         hub.style.left = "auto";
         hub.style.width = "auto";
         hub.style.zIndex = "auto";
         hub.style.marginTop = "80px";
+
+        h2.style.opacity = ".5";
+        h3.style.opacity = ".5";
     }
 
     // var h1 = document.getElementsByClassName('hub-section-title')[0];
