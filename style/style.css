@@ -271,11 +271,12 @@ main div:first-child.section-header{
 .hub-content {
     width: 960px;
     margin: auto;
+    max-height: 1000px;
 }
 
 .hub-slide-zero {
     background-image: url('../img/student-hub-outline.png');
-    background-position-y: 120px;
+    background-position-y: 10px;
     background-repeat: no-repeat;
     background-size: 960px;
     height: 1000px;
@@ -287,9 +288,9 @@ main div:first-child.section-header{
     background-position: 0 0;
     background-repeat: no-repeat;
     height: 1000px;
-    opacity: 0;
+    opacity: 0.5;
     position: relative;
-    top: -1001px;
+    top: -1111px;
     left: -137px;
 
     -webkit-transition: opacity 1s ease-in;
@@ -312,7 +313,7 @@ main div:first-child.section-header{
     height: 1000px;
     opacity: 0;
     position: relative;
-    top: -2000px;
+    top: -2111px;
 
     -webkit-transition: opacity 1s ease-in;
     -moz-transition: opacity 1s ease-in;
@@ -334,7 +335,52 @@ main div:first-child.section-header{
     height: 1000px;
     opacity: 0;
     position: relative;
-    top: -3000px;
+    top: -3111px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
+.hub-slide-four {
+    background-image: url('../img/student-hub-color-4.png');
+    background-position: 695px -3px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    opacity: 0;
+    position: relative;
+    top: -4111px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
+.hub-slide-five {
+    background-image: url('../img/student-hub-color-5.png');
+    background-position: 745px -3px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    left: 121px;
+    opacity: 0;
+    position: relative;
+    top: -5109px;
 
     -webkit-transition: opacity 1s ease-in;
     -moz-transition: opacity 1s ease-in;
@@ -365,6 +411,7 @@ main div:first-child.section-header{
     line-height: 28px;
     margin: auto;
     max-width: 960px;
+    min-height: 60px;
     opacity: .5;
 
     -webkit-transition: opacity 1s ease-in;
@@ -529,11 +576,8 @@ main div:first-child.section-header{
     width: 566px;
 }
 
-/* Impact styles */
 
-#impact.section-header {
-    padding-top: 280px;
-}
+/* Impact styles */
 
 #impact-stats {
     padding-bottom: 10px;
@@ -661,48 +705,6 @@ main div:first-child.section-header{
     display: inline-block;
     height: 32px;
     width: 32px;
-}
-
-/* Student Hub styles */
-
-#student-hub {
-    background-color: #ffcc00;
-    margin-bottom: 220px;
-}
-
-#hub-padding-top {
-    padding-top: 150px;
-}
-
-.hub-content {
-
-}
-
-#high-school {
-    background: url('../img/illustration-high-school.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    min-height: 700px;
-    max-width: 960px;
-}
-
-#college {
-    background: url('../img/illustration-college.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    min-height: 700px;
-    max-width: 960px;
-}
-
-#the-hub {
-    background: url('../img/illustration-hub.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    min-height: 700px;
-    max-width: 960px;
 }
 
 
