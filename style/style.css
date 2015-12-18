@@ -37,7 +37,6 @@ body {
 }
 
 #chegg-ux-logo {
-    left: 40%;
     position: relative;
     top: -180px;
     z-index: 2004;
@@ -184,14 +183,25 @@ main div:first-child.section-header{
 
 #bg-overlay {
     position: relative;
-    background-color: rgba(51, 153, 153, 0.94);
+    background-color: rgba(51, 153, 153, 0.91);
     height: 724px;
-    min-width: 960px;
+    /*min-width: 960px;*/
     min-height: 100%;
     top: -505px;
     margin: 0 auto;
     width: 100%;
 }
+
+.outer-logo-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.inner-logo-wrapper {
+    display: inline-block;
+}
+
+
 
 /* Employee testimonials styles */
 
@@ -215,7 +225,7 @@ main div:first-child.section-header{
     background-color: rgba(51, 153, 153, 0.8);
     color: #fff;
     min-height: 184px;
-    padding: 30px;
+    padding: 30px 30px 5px 30px;
     position: absolute;
     bottom: 0;
 }
@@ -800,15 +810,15 @@ main div:first-child.section-header{
         display: none;
     }
 
-    #chegg-ux-logo {
-        left: 33%;
-    }
-
     #header-content h1 {
         font-size: 36px;
         line-height: 42px;
         padding-top: 153px;
         width: 100%;
+    }
+
+    #header-content #header-buttons {
+        top: -40px;
     }
 
     .student-success-word {
@@ -825,6 +835,7 @@ main div:first-child.section-header{
     #bg-overlay {
         height: 552px;
         min-width: 375px;
+        top: -542px;
     }
 
     .section-header h2 {
@@ -846,6 +857,7 @@ main div:first-child.section-header{
 
     .portrait-kyrie {
         background-size: 114%;
+        background-position: center;
     }
 
     .button.header-button {
@@ -923,20 +935,18 @@ main div:first-child.section-header{
     #footer-content #header-buttons {
         margin-top: 0;
     }
+
+    .testimonial {
+        padding: 30px;
+    }
 }
 
 
 @media screen and (max-width: 320px) {
 
-    #chegg-ux-logo {
-        position: relative;
-        top: -165px;
-        width: 35%;
-    }
-
     #bg-overlay {
         height: 553px;
-        top: -488px;
+        top: -530px;
         min-width: 320px;
     }
 
@@ -978,4 +988,30 @@ main div:first-child.section-header{
 
 .hide {
     visibility: hidden;
+}
+
+
+/* Firefox-specific */
+
+@-moz-document url-prefix() {
+
+    .hub-slide-one {
+        top: -1121px;
+    }
+
+    .hub-slide-two {
+        top: -2120px;
+    }
+
+    .hub-slide-three {
+        top: -3120px;
+    }
+
+    .hub-slide-four {
+        top: -4120px;
+    }
+
+    .hub-slide-five {
+        top: -5119px;
+    }
 }

@@ -106,6 +106,7 @@ window.onscroll = function() {
 
         h2.style.opacity = ".5";
         h3.style.opacity = ".5";
+        one.style.opacity = "0.5";
     }
 
     // var h1 = document.getElementsByClassName('hub-section-title')[0];
