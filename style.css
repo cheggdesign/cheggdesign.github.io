@@ -615,29 +615,29 @@ a[data-lightbox]:hover img{
 /* = Custom Styling
 -------------------------------------------------------------- */
 @font-face {
-  font-family: 'Aspira-Bold';
-  src:  url('/fonts/Aspira-Bold.otf') format('otf');
+  font-family: 'Aspira-Bold2';
+  src:  url('fonts/Aspira-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Aspira-Medium';
-  src:  url('/fonts/Aspira-Medium.otf') format('otf');
+  src:  url('fonts/Aspira-Medium.otf') format('opentype');
 }
 
 
 @font-face {
   font-family: 'Aspira-Demi';
-  src:  url('/fonts/Aspira-Demi.otf') format('otf');
+  src:  url('fonts/Aspira-Demi.otf') format('opentype');
 }
 
 @font-face {
  font-family: 'Aspira-Regular';
-  src:  url('/fonts/Aspira-Regular.otf') format('otf');
+  src:  url('fonts/Aspira-Regular.otf') format('opentype');
 }
 
 @font-face {
  font-family: 'Aspira-Thin';
-  src:  url('/fonts/Aspira-Thin.otf') format('otf');
+  src:  url('fonts/Aspira-Thin.otf') format('opentype');
 }
 
 
