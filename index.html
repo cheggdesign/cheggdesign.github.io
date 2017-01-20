@@ -1,39 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 <title>? Chegg UX ?</title>
+=======
+<title>Chegg UX!!!</title>
+>>>>>>> 65d9d02473fee83323f7d71b92289bc7421f2081
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" type="text/css" href="style/style.css">
+
+<meta name="description" content="Chegg UX Design is working to make higher education more accessible, affordable, and achievable. We'd love to grab coffee and chat about our mission and team." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<script>
+
+window.setInterval(setSuccessWord, 4000);
+
+function setSuccessWord() {
+
+    var el = document.getElementsByClassName('student-success-word')[0];
+
+    var currentWord = el.innerText;
+
+    if (!el.classList.contains('fade-out')) {
+        el.classList.add('fade-out');
+        window.setTimeout(toggleWord, 1500);
+    }
+
+    function toggleWord() {
+        if (currentWord === 'affordable') {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'accessible';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+
+            // window.setInterval(fadeInWord, 100);
+        } else if (currentWord === 'accessible') {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'achievable';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+        } else {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'affordable';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+        }
+    }
+}
+
+</script>
+
 </head>
 
 <body>
     <div id="container">
-        <nav id="nav-bar" data-0="background-color:transparent;border-bottom:none;" data-650="background-color:#fff;" data-651="border-bottom:1px solid #e9e9e9;">
-            <img id="chegg-ux-logo" src="img/chegg-ux-logo.png" />
-            <div id="fixed-ctas">
-                <span id="nav-buttons" data-0="display:none;" data-650="display:block;">
-                    <a class="button nav-button outline" href="http://www.chegg.com/jobs/listings">Open positions</a>
-                    <a class="button nav-button" href="#">Grab Coffee</a>
-                </span>
-            </div>
-        </nav>
 
         <header id="header-content">
-            <h1>We are designing more affordable higher education.</h1>
+            <h1>We are designing more <span class="student-success-word">affordable</span> higher education.</span></h1>
+            <div class="outer-logo-wrapper">
+                <div class="inner-logo-wrapper">
+                    <img id="chegg-ux-logo" src="img/chegg-ux-logo.png" />
+                </div>
+            </div>
+            <div>
             <div id="header-buttons">
                 <div>
                     <a class="button header-button" href="http://www.chegg.com/jobs/listings">Open positions</a>
-                    <a class="button header-button" href="#">Grab Coffee</a>
+                    <a class="button header-button" href="http://cheggdesign.wordpress.com/grab-coffee/">Grab Coffee</a>
                 </div>
             </div>
-            <div id="learn-more-anchor">
-                <a href="#">Learn more about our UX team</a>
+
+            <div id="bg-overlay-container">
+              <div id="bg-overlay"></div>
             </div>
         </header>
 
         <main>
             <div id="employee-testimonials" class="section-header">
-                <h2>We love our mission <span class="amp">&amp;</span> team</h2>
+                <h2>We love our mission &amp; team</h2>
                 <div id="testimonials-section">
                     <div class="testimonial-portrait portrait-stewart">
                         <div class="testimonial">
@@ -61,51 +140,17 @@
                 </div>
             </div>
 
-            <div id="culture" class="section-header">
-                <h2>A peek inside the Chegg UX team</h2>
-                <div id="culture-section">
-                    <ul id="first-table-row">
-                        <li id="culture-shafeen" class="culture-portrait"></li>
+            <div id="student-hub" class="section-header">
+                <h2 class="hub-section-title">High school students start their adventure with us</h2>
+                <h3 class="hub-section-subheader">It's a piece of cake to find the best college, get scholarships, and access on-demand online tutoring</h3>
 
-                        <li id="culture-jennie" class="culture-portrait"></li>
-
-                        <li id="culture-experience" class="cultural-stat">
-                            <div class="stat-content">
-                                <h4>Average Team Experience</h4>
-                                <p>13.3 Years</p>
-                            </div>
-                        </li>
-
-                        <li id="culture-twyla" class="culture-portrait"></li>
-                    </ul>
-
-                    <ul id="second-table-row">
-                        <li id="culture-mark" class="culture-portrait "></li>
-
-                        <li id="culture-jenn" class="culture-portrait"></li>
-
-                        <li id="culture-mike" class="culture-portrait"></li>
-
-                        <li id="culture-rosa" class="culture-portrait"></li>
-                    </ul>
-
-                    <ul id="third-table-row">
-                        <li id="culture-kids" class="cultural-stat">
-                            <div class="stat-content">
-                                <h4>Total Chegg Mini-Me<span class="lowercase">s</span></h4>
-                                <p>26 Kids</p>
-                            </div>
-                        </li>
-
-                        <li id="culture-jen" class="culture-portrait"></li>
-
-                        <li id="culture-education" class="cultural-stat">
-                            <div class="stat-content">
-                                <h4>Total Team Education</h4>
-                                <p>3 PhDs, 6 masters, 1 MBA, and 3 BFAs</p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="hub-content">
+                    <div class="hub-slide-zero"></div>
+                    <div class="hub-slide-one"></div>
+                    <div class="hub-slide-two"></div>
+                    <div class="hub-slide-three"></div>
+                    <div class="hub-slide-four"></div>
+                    <div class="hub-slide-five"></div>
                 </div>
             </div>
 
@@ -130,7 +175,7 @@
                         <div id="stat-books" class="impact-stat">
                             <div class="impact-content">
                                 <span>$250</span>
-                                <p>Average savings per book/student</p>
+                                <p>Average book savings per student</p>
                             </div>
                         </div>
 
@@ -173,22 +218,51 @@
                 </div>
             </div>
 
-            <div id="student-hub" class="section-header">
-                <div id="hub-padding-top">
-                    <div id="high-school" class="hub-content">
-                        <h2>High School</h2>
-                        <h3>Fashion axe Williamsburg kale chips iPhone Neutra Pinterest narwhal, synth</h3>
-                    </div>
+            <div id="culture" class="section-header">
+                <h2>A peek inside the Chegg UX team</h2>
+                <div id="culture-section">
+                    <ul id="first-table-row">
+                        <li id="culture-shafeen" class="culture-portrait">&nbsp;</li>
 
-                    <div id="college" class="hub-content">
-                        <h2>College</h2>
-                        <h3>Fashion axe Williamsburg kale chips iPhone Neutra Pinterest narwhal, synth</h3>
-                    </div>
+                        <li id="culture-jennie" class="culture-portrait">&nbsp;</li>
 
-                    <div id="the-hub" class="hub-content">
-                        <h2>The Chegg Student Hub</h2>
-                        <h3>Helping students save time, save money, and get smarter. </h3>
-                    </div>
+                        <li id="culture-experience" class="cultural-stat">
+                            <div class="stat-content">
+                                <h4>Average Team Experience</h4>
+                                <p>13.3 Years</p>
+                            </div>
+                        </li>
+
+                        <li id="culture-twyla" class="culture-portrait">&nbsp;</li>
+                    </ul>
+
+                    <ul id="second-table-row">
+                        <li id="culture-mark" class="culture-portrait ">&nbsp;</li>
+
+                        <li id="culture-jenn" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-mike" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-rosa" class="culture-portrait">&nbsp;</li>
+                    </ul>
+
+                    <ul id="third-table-row">
+                        <li id="culture-kids" class="cultural-stat">
+                            <div class="stat-content">
+                                <h4>Total Chegg Mini-Me<span class="lowercase">s</span></h4>
+                                <p>26 Kids</p>
+                            </div>
+                        </li>
+
+                        <li id="culture-jen" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-education" class="cultural-stat">
+                            <div class="stat-content">
+                                <h4>Total Team Education</h4>
+                                <p>3 BFAs, 6 masters, 1 MBA, and 3 PhDs</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -251,16 +325,19 @@
                 <div id="header-buttons">
                     <div>
                         <a class="button header-button" href="http://www.chegg.com/jobs/listings">Open positions</a>
-                        <a class="button header-button" href="#">Grab Coffee</a>
+                        <a class="button header-button" href="http://cheggdesign.wordpress.com/grab-coffee/">Grab Coffee</a>
                     </div>
                 </div>
             </footer>
         </main>
     </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-    <script type="text/javascript">
-        var s = skrollr.init();
+    <script src="js/scripts.js"></script>
+    <script>
+    (function() {
+      var height = document.body.clientHeight;
+      console.log(height);
+    })();
     </script>
 </body>
 

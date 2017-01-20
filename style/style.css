@@ -1,5 +1,15 @@
 /* Global styles */
 
+@font-face {
+    font-family: AspiraDemi;
+    src: url("../fonts/aspira-demi.otf") format("opentype");
+}
+
+@font-face {
+    font-family: AspiraLight;
+    src: url("../fonts/aspira-light.otf") format("opentype");
+}
+
 body {
     background-color: #fff;
     font-family: sans-serif;
@@ -16,28 +26,26 @@ body {
     text-transform: lowercase;
 }
 
-.amp {
-    font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
-    font-size: 110%;
-    font-style:i talic;
-}
-
 /* Nav styles */
 
 #nav-bar {
     background-color: transparent;
     height: 50px;
-    left: 0;
-    min-width: 980px;
-    position: fixed;
-    top: 0;
+    position: relative;
     width: 100%;
-    z-index: 2000;
+    z-index: 2003;
 }
 
 #chegg-ux-logo {
-    padding-left: 10px;
-    padding-top: 10px;
+    position: relative;
+    top: -180px;
+    z-index: 2004;
+
+    -webkit-transform: scale(0.45);
+    -moz-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    -o-transform: scale(0.45);
+    transform: scale(0.45);
 }
 
 #nav-buttons {
@@ -51,6 +59,7 @@ body {
     background-color: #f07d00;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     color: #fff;
+    font-family: AspiraLight;
     padding: 8px;
     width: 125px;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
@@ -70,7 +79,7 @@ body {
 /* Page styles */
 
 #container {
-    background: url('../img/header-chegg-team-alternate.jpg');
+    background: url('../img/header-bg.jpg');
     height: 750px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,6 +104,7 @@ main div:first-child.section-header{
 
 .section-header h2 {
     color: #333;
+    font-family: AspiraDemi;
     font-size: 36px;
     line-height: 43px;
     padding-bottom: 40px;
@@ -104,18 +114,28 @@ main div:first-child.section-header{
 
 #header-content h1 {
     color: #fff;
+    font-family: AspiraDemi;
     font-size: 48px;
     line-height: 56px;
     margin: 0 auto;
-    padding-top: 250px;
+    padding-top: 300px;
+    position: relative;
     text-align: center;
     text-shadow: 1px 1px #414141;
     width: 660px;
+    z-index: 2001;
+}
+
+.student-success-word {
+    display: inline-block;
+    min-width: 231.36px;
+    width: 231.36px;
 }
 
 #header-buttons {
-    margin-top: 40px;
+    position: relative;
     width: 100%;
+    z-index: 2000;
 }
 
 #header-buttons a:first-child {
@@ -132,12 +152,15 @@ main div:first-child.section-header{
     background-color: #f07d00;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     color: #fff;
+    font-family: AspiraLight;
+    font-size: 18px;
+    line-height: 22px;
     padding: 15px;
     width: 220px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #learn-more-anchor {
+    font-family: AspiraDemi;
     position: absolute;
     top: 650px;
     width: 100%;
@@ -153,10 +176,38 @@ main div:first-child.section-header{
     width: 100%;
 }
 
+#bg-overlay-container {
+    position: relative;
+    width: 100%;
+}
+
+#bg-overlay {
+    position: relative;
+    background-color: rgba(51, 153, 153, 0.91);
+    height: 724px;
+    /*min-width: 960px;*/
+    min-height: 100%;
+    top: -505px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.outer-logo-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.inner-logo-wrapper {
+    display: inline-block;
+}
+
+
+
 /* Employee testimonials styles */
 
 #testimonials-section {
     display: table;
+    empty-cells: show;
     margin: 0 auto;
     max-width: 960px;
 }
@@ -171,21 +222,27 @@ main div:first-child.section-header{
 }
 
 .testimonial {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(51, 153, 153, 0.8);
     color: #fff;
     min-height: 184px;
-    padding: 30px;
+    padding: 30px 30px 5px 30px;
     position: absolute;
     bottom: 0;
 }
 
 .testimonial h4 {
+    font-family: AspiraDemi;
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 8px;
 }
 
+.testimonial span {
+    font-family: AspiraLight;
+}
+
 .testimonial p {
+    font-family: AspiraLight;
     font-size: 14px;
     line-height: 20px;
     padding-top: 20px;
@@ -200,7 +257,8 @@ main div:first-child.section-header{
 
 .portrait-kyrie {
     background: url('../img/portrait-kyrie.png');
-    background-size: cover;
+    background-position: center -20px;
+    background-size: 112%;
     background-repeat: no-repeat;
     border-right: 5px solid #fff;
 }
@@ -210,6 +268,171 @@ main div:first-child.section-header{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+/* Student hub styles */
+
+#student-hub {
+    background-color: #FFCC00;
+    height: 1000px;
+    margin-top: 80px;
+}
+
+.hub-content {
+    width: 960px;
+    margin: auto;
+    max-height: 1000px;
+}
+
+.hub-slide-zero {
+    background-image: url('../img/student-hub-outline.png');
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    background-size: 960px;
+    height: 1000px;
+    max-width: 100%;
+}
+
+.hub-slide-one {
+    background-image: url('../img/student-hub-color-1.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 1000px;
+    opacity: 0.5;
+    position: relative;
+    top: -1111px;
+    left: -137px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
+.hub-slide-two {
+    background-image: url('../img/student-hub-color-2.png');
+    background-position: 89px 2px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    opacity: 0;
+    position: relative;
+    top: -2111px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
+.hub-slide-three {
+    background-image: url('../img/student-hub-color-3.png');
+    background-position: 445px -3px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    opacity: 0;
+    position: relative;
+    top: -3111px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
+.hub-slide-four {
+    background-image: url('../img/student-hub-color-4.png');
+    background-position: 695px -3px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    opacity: 0;
+    position: relative;
+    top: -4111px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
+.hub-slide-five {
+    background-image: url('../img/student-hub-color-5.png');
+    background-position: 745px -3px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    left: 121px;
+    opacity: 0;
+    position: relative;
+    top: -5109px;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    -webkit-transform: scale(0.73);
+    -moz-transform: scale(0.73);
+    -ms-transform: scale(0.73);
+    -o-transform: scale(0.73);
+    transform: scale(0.73);
+}
+
+.section-header h2.hub-section-title {
+    padding-bottom: 20px;
+    opacity: .5;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+.hub-section-subheader {
+    font-size: 21px;
+    line-height: 28px;
+    margin: auto;
+    max-width: 960px;
+    min-height: 60px;
+    opacity: .5;
+
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+
+
 
 /* Culture styles */
 
@@ -234,6 +457,7 @@ main div:first-child.section-header{
 .stat-content {
     bottom: 0;
     color: #fff;
+    font-family: AspiraLight;
     padding: 10px;
     position: absolute;
     text-align: left;
@@ -245,6 +469,7 @@ main div:first-child.section-header{
 }
 
 .stat-content p {
+    font-family: AspiraDemi;
     font-size: 28px;
     line-height: 34px;
 }
@@ -255,6 +480,7 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
     height: 364px;
     width: 243px;
+    vertical-align: top;
 }
 
 #culture-jennie {
@@ -263,6 +489,7 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
     height: 268px;
     width: 186px;
+    vertical-align: top;
 }
 
 #culture-experience {
@@ -278,6 +505,7 @@ main div:first-child.section-header{
     background-repeat: no-repeat;
     height: 426px;
     width: 311px;
+    vertical-align: top;
 }
 
 #culture-mark {
@@ -288,6 +516,7 @@ main div:first-child.section-header{
     position: relative;
     top: -100px;
     width: 223px;
+    vertical-align: top;
 }
 
 #culture-jenn {
@@ -298,6 +527,7 @@ main div:first-child.section-header{
     position: relative;
     top: -197px;
     width: 169px;
+    vertical-align: top;
 }
 
 #culture-mike {
@@ -309,6 +539,7 @@ main div:first-child.section-header{
     right: -2px;
     top: -232px;
     width: 308px;
+    vertical-align: top;
 }
 
 #culture-rosa {
@@ -321,6 +552,7 @@ main div:first-child.section-header{
     top: -24px;
     left: 1px;
     width: 286px;
+    vertical-align: top;
 }
 
 #culture-kids {
@@ -342,6 +574,7 @@ main div:first-child.section-header{
     position: relative;
     top: -361px;
     width: 162px;
+    vertical-align: top;
 }
 
 #culture-education {
@@ -353,12 +586,8 @@ main div:first-child.section-header{
     width: 566px;
 }
 
-/* Impact styles */
 
-#impact {
-    margin-top: -393px;
-    margin-bottom: 80px;
-}
+/* Impact styles */
 
 #impact-stats {
     padding-bottom: 10px;
@@ -388,6 +617,7 @@ main div:first-child.section-header{
 
 .impact-content span {
     color: #666;
+    font-family: AspiraDemi;
     font-size: 26px;
     font-weight: 700;
     line-height: 31px;
@@ -395,6 +625,7 @@ main div:first-child.section-header{
 
 .impact-content p {
     color: #666;
+    font-family: AspiraLight;
     font-size: 15px;
     font-weight: 100;
     line-height: 18px;
@@ -449,8 +680,9 @@ main div:first-child.section-header{
 }
 
 .tweet-content {
-    font-size: 14px;
-    line-height: 22px;
+    font-family: AspiraLight;
+    font-size: 16px;
+    line-height: 24px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -472,6 +704,7 @@ main div:first-child.section-header{
 
 .twitter-username {
     display: block;
+    font-family: AspiraDemi;
     font-weight: 500;
 }
 
@@ -484,51 +717,21 @@ main div:first-child.section-header{
     width: 32px;
 }
 
-/* Student Hub styles */
-
-#student-hub {
-    background-color: #ffcc00;
-}
-
-#hub-padding-top {
-    padding-top: 150px;
-}
-
-#high-school {
-    background: url('../img/illustration-high-school.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    min-height: 700px;
-    max-width: 960px;
-}
-
-#college {
-    background: url('../img/illustration-college.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    min-height: 700px;
-    max-width: 960px;
-}
-
-#the-hub {
-    background: url('../img/illustration-hub.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    min-height: 700px;
-    max-width: 960px;
-}
 
 /* Office loations styles */
 
 #office-locations {
-    background: url('../img/office.png');
+    background: url('../img/office.jpg');
     background-position: center 85%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: -220px;
     min-height: 700px;
+}
+
+#office-locations h2 {
+    position: relative;
+    top: -160px;
 }
 
 #locations-section {
@@ -538,7 +741,7 @@ main div:first-child.section-header{
 }
 
 .office-location {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(51, 153, 153, 0.8);
     color: #fff;
     float: left;
     margin-right: 10px;
@@ -548,12 +751,12 @@ main div:first-child.section-header{
 }
 
 .location-header {
+    font-family: AspiraDemi;
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
     padding-top: 80px;
     text-transform: uppercase;
-    text-shadow: 1px 1px #414141;
 }
 
 #first-location .location-icon {
@@ -565,6 +768,7 @@ main div:first-child.section-header{
 }
 
 #headquarters {
+    font-family: AspiraLight;
     font-size: 10px;
     letter-spacing: 1px;
     line-height: 12px;
@@ -572,15 +776,242 @@ main div:first-child.section-header{
 }
 
 .office-address {
+    font-family: AspiraLight;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
     margin-top: 40px;
-    text-shadow: 1px 1px #414141;
 }
 
 /* Footer styles */
 
 #footer-content {
     margin-bottom: 200px;
+}
+
+/* Mobile styles */
+
+@media screen and (max-width: 375px) {
+
+    #student-hub {
+        display: none;
+    }
+
+    #container {
+        height: 480px;
+        background-position-x: -80px;
+    }
+
+    main {
+        top: 450px;
+    }
+
+    #culture {
+        display: none;
+    }
+
+    #header-content h1 {
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 153px;
+        width: 100%;
+    }
+
+    #header-content #header-buttons {
+        top: -40px;
+    }
+
+    .student-success-word {
+        position: relative;
+        text-align: left;
+        min-width: 175px;
+        width: 175px;
+    }
+
+    #bg-overlay-container {
+        max-width: 375px;
+    }
+
+    #bg-overlay {
+        height: 552px;
+        min-width: 375px;
+        top: -542px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    #testimonials-section {
+        display: block;
+        max-width: 375px;
+    }
+
+    .testimonial-portrait {
+        border-right: none;
+        display: block;
+        margin: 0 auto 10px auto;
+        max-width: 300px;
+    }
+
+    .portrait-kyrie {
+        background-size: 114%;
+        background-position: center;
+    }
+
+    .button.header-button {
+        display: block;
+        margin-bottom: 10px;
+        margin: 0 auto 10px auto;
+    }
+
+    #header-buttons a:first-child {
+        margin-right: auto;
+    }
+
+    #impact {
+        margin-top: 0;
+        margin-bottom: 120px;
+    }
+
+    #impact.section-header {
+        padding-top: 40px;
+    }
+
+    #impact h2 {
+        font-size: 27px;
+        line-height: 31px;
+    }
+
+    #impact-stats {
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .impact-stat {
+        border-right: none;
+        display: block;
+        margin: 0 auto 40px auto;
+    }
+
+    #impact-tweets {
+        margin-top: 0;
+        width: 280px;
+    }
+
+    .impact-tweet {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #locations-section {
+        display: block;
+        width: 100%;
+    }
+
+    #office-locations {
+        background: none;
+        margin-top: 0;
+        padding-bottom: 40px;
+    }
+
+    #first-location {
+        margin-top: -160px;
+    }
+
+    .office-location {
+        background-color: rgba(51, 153, 153, 1);
+        float: none;
+        margin: 0 auto 20px auto;
+        max-width: 75%;
+    }
+
+    #footer-content.section-header {
+        padding-top: 0;
+    }
+
+    #footer-content #header-buttons {
+        margin-top: 0;
+    }
+
+    .testimonial {
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    #bg-overlay {
+        height: 553px;
+        top: -530px;
+        min-width: 320px;
+    }
+
+    #header-content h1 {
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 140px;
+        width: 100%;
+    }
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in 1 forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 1.2s ease-out 1 forwards;
+}
+
+/*.is-paused {
+    animation-play-state: paused;
+}*/
+
+.hide {
+    visibility: hidden;
+}
+
+
+/* Firefox-specific */
+
+@-moz-document url-prefix() {
+
+    .hub-slide-one {
+        top: -1121px;
+    }
+
+    .hub-slide-two {
+        top: -2120px;
+    }
+
+    .hub-slide-three {
+        top: -3120px;
+    }
+
+    .hub-slide-four {
+        top: -4120px;
+    }
+
+    .hub-slide-five {
+        top: -5119px;
+    }
 }
