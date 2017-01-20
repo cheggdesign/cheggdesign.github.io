@@ -1,0 +1,3 @@
+to push to github, type the following into your terminal:
+./push.sh "this is the commit message"
+
